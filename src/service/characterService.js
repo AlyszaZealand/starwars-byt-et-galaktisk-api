@@ -112,7 +112,4 @@ async function handleDeleteCharacterById(paramId) {
     return true;
 }
 
-
-
-
 module.exports = {handleGetAllCharacters, handleGetCharacterById, handleAddNewCharacter, handleUpdateCharacterById, handleDeleteCharacterById}
