@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>My Website</title>
+    <script src="client.js" defer></script>
+    <title>Star Wars karakterer</title>
 </head>
 <body>
-<h1>My Website</h1>
+<h1>Star Wars karakterer</h1>
+
+<p id="message" role="alert"></p>
+
+<h2>Alle karakterer</h2>
+<table>
+    <thead>
+    <tr><th>Navn</th><th>Rolle</th><th>Planet</th></tr>
+    </thead>
+    <tbody id="character-list"></tbody>
+</table>
+
+<h2>Opret karakter</h2>
+<form id="character-form">
+    <label>Navn <input type="text" name="name"></label>
+    <label>Rolle
+        <select name="role">
+            <option value="jedi">Jedi</option>
+            <option value="sith">Sith</option>
+            <option value="rebel">Rebel</option>
+            <option value="smuggler">Smuggler</option>
+        </select>
+    </label>
+    <label>Planet <input type="text" name="planet"></label>
+    <button type="submit">Opret</button>
+</form>
 </body>
 </html>

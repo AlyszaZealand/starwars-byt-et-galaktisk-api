@@ -2,3 +2,11 @@ body {
     background: #333;
     color: #fff;
 }
+table { border-collapse: collapse; margin-bottom: 1.5rem; }
+th, td { border: 1px solid #666; padding: 0.4rem 0.8rem; text-align: left; }
+form { display: flex; flex-direction: column; gap: 0.6rem; max-width: 300px; }
+label { display: flex; flex-direction: column; gap: 0.2rem; }
+#message:empty { display: none; }
+#message { padding: 0.5rem 0.8rem; border-radius: 4px; }
+#message.error { background: #8b1a1a; }
+#message.success { background: #1a6b2f; }
