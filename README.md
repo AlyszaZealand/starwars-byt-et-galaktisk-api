@@ -1,5 +1,21 @@
+# Hvordan du starter applikationen.
+Starter server.js
+Kører port: 3000.
+
+
 # Hvilken arkitektur har I valgt, og hvorfor? 
   MVC: Fordi den er vi bekendt med og ved hvordan nogenlunde fungere. i forhold til at adskille ansvar og gøre det nemt at gå ind og kigge/ændre i ting.
+
+  ## routes
+    Vi har to routes.js en characterRoutes.js, som håndtere endpoints for CRUD operationerne alt der har med karaktere at gøre
+    rebelRoutes.js håndtere vores download af txt filen endpoint, samt et redirect til Luke's side.
+    
+  ## controller
+    Håndtere alt der har ved request og response at gøre, samt sørger for at de data service skal bruge bliver håndtere og sendt med.
+  
+  ## service
+    Her inde har vi noget validering (noget skal måske rykkes til middleware)
+    Derudover er det der vi håndtere det med at download data'en fra vores json og skrive der til. 
 
 # Hvad ville I ændre, hvis applikationen skulle anvendes af mange brugere? 
   Håndtere race condition. 
